@@ -5,7 +5,7 @@ function Carrousel(images, elementId) {
   this.afficherImage = function() {
       let img = document.createElement("img");
       img.src = this.images[this.indexActuel];
-      let element = document.getElementById(this.elementId);
+      let element = document.getElementById("carrousel");
       element.innerHTML = "";
       element.appendChild(img);
   }
